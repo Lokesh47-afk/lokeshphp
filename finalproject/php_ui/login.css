@@ -1,0 +1,111 @@
+body {
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+ height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-wrapper {
+  display: flex;
+  width: 900px;
+  max-width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.login-form, .login-visual {
+  flex: 1;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.login-visual {
+  display: none;
+  background: url('background.jpg') center/cover no-repeat;
+}
+
+.login-form {
+  color: #fff;
+}
+
+.login-form h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-group input::placeholder {
+  color: #dcdcdc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #178cff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0f6ac4;
+}
+
+.login-extra {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.login-extra a {
+  color: #4fc3ff;
+  text-decoration: none;
+}
+
+.logicon{
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 20vw;
+  height: 40vh;
+}
+
+.login-extra a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .login-visual {
+    display: block;
+  }
+}
+

@@ -1,0 +1,103 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body with background image */
+body {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: url(./images/bg.jpg) no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+/* Page title */
+h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* First container – names list */
+.container:first-of-type {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Names styled with borders */
+.container:first-of-type p {
+  border: 2px solid #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s ease;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.container:first-of-type p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Second container – cards */
+.container:last-of-type{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Developer cards */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 20px 25px;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card h1 {
+  font-size: 20px;
+  color: #ffe082;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.cl{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  background-color: beige;
+  color: black;
+  width: 60vw;
+  height: 10vh;
+  margin-left: 19%;
+  border-radius: 20px;
+}
+h2{
+  margin: 2%;
+}
